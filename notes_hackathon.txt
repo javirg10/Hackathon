@@ -1,0 +1,18 @@
+summary of what I wrote down:
+
+- It's a small web application where "clients" can take a "quiz" to see if they can differentiate between AI content and human content
+- Languages: HTML with JS frontend, backend isn't a must-have, but it could be a nice thing to have
+- the page consists of a title with FH logo, short description, the quiz itself a submit button?
+- if everything or a certain percentage is correct then we generate a code, code starts at for example 2130
+- the quiz needs to be solvable for old men that are a bit tipsy
+- 3-5 images per quiz
+- nice-to-have: random sets of questions
+- quiz images can be stored in project folder
+- nice-to-have: backend, can be used to store the already generated numbers, with a possible overview page that can be used to see which numbers have already been generated
+- nice-to-have: display of correctness instead of generation of the code and someone else hands the person a code? -> can be done using an alert
+
+The must-haves as of right now:
+- The HTML web page
+- JS code to make examples appear
+- the examples
+- Printing a result code starting at 2130
