@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+//import 'src/app/globals.css';
 
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
 
     function verifyResults(){
         let points = 0;
+        console.log("points: ", points);
         if(result1 === "AI")
             points++;
         if(result2 === "Human")
@@ -37,6 +39,7 @@ export default function Home() {
             points++;
         if (points>2)
             console.log("Code Generated");
+        console.log("points: ", points);
     }
 
 
@@ -47,7 +50,19 @@ export default function Home() {
     }
 
     return (
-    <main>
+        <main style={{ position: 'relative' }}>
+        <img
+          src="\Logo_FHJ_rgb.jpg"
+          alt="Mi Imagen"
+          style={{
+            position: 'absolute',
+            top: '0',
+            right: '0',
+            maxWidth: '50%',
+            maxHeight: '150px'
+
+          }}
+        />
         <h1>Quiz: AI vs Human Generated Content</h1>
         <div>
             <form onSubmit={handleSubmit}>
