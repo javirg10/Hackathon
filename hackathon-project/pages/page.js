@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+/*import Image1 from '/Image1.png';
+import Image2 from '/Image2.jpg';
+import Image3 from '/Image3.jpeg';
+import Image4 from '/Image4.png';//*/
 //import 'src/app/globals.css';
 
 
@@ -69,7 +73,7 @@ export default function Home() {
                 <fieldset>
                     <legend>Image 1</legend>
                     <div className="row">
-                        <div className="col-sm-2" ><img/></div>
+                        <div className="col-sm-2" ><Image src={'/Image1.png'} alt='Image 1' width={400} height={200} /></div>
                         <div className="col">
                             <div className="form-check" >
                                 <input className="form-check-input" 
@@ -97,7 +101,7 @@ export default function Home() {
                 <fieldset>
                     <legend>Image 2</legend>
                     <div className="row">
-                        <div className="col-sm-2" ><img/></div>
+                        <div className="col-sm-2" ><Image src={'/Image2.jpg'} alt='Image 2' width={400} height={230}/></div>
                         <div className="col" >
                             <div className="form-check" >
                                 <input className="form-check-input" 
@@ -125,7 +129,7 @@ export default function Home() {
                 <fieldset>
                     <legend>Image 3</legend>
                     <div className="row">
-                        <div className="col-sm-2" ><img/></div>
+                        <div className="col-sm-2" ><Image src={'/Image3.jpeg'} alt='Image 3' width={400} height={230}/></div>
                         <div className="col" >
                             <div className="form-check">
                                 <input className="form-check-input" 
@@ -153,7 +157,7 @@ export default function Home() {
                 <fieldset>
                     <legend>Image 4</legend>
                     <div className="row">
-                        <div className="col-sm-2" ><img/></div>
+                        <div className="col-sm-2" ><Image src={'/Image4.png'} alt='Image 4' width={400} height={300}/></div>
                         <div className="col" >
                             <div className="form-check" >
                                 <input className="form-check-input" 
