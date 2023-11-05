@@ -5,7 +5,7 @@ import Image2 from '/Image2.jpg';
 import Image3 from '/Image3.jpeg';
 import Image4 from '/Image4.png';//*/
 import 'src/app/globals.css';
-
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
 
@@ -44,13 +44,19 @@ export default function Home() {
         if (points > 2)
             console.log("Code Generated");
         console.log("points: ", points);
+        return points;
     }
 
+    const router = useRouter();
+    
 
     function handleSubmit(event) {
         event.preventDefault();
         console.log("submitted");
         verifyResults()
+        // redirect to success page
+        
+        router.push('/submit?points=' + verifyResults());
     }
 
     return (
