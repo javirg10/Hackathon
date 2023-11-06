@@ -9,6 +9,15 @@ export default function Home() {
     const searchParams = useSearchParams()
     const points = searchParams.get('points')
 
+    const date = new Date();
+    const year = date.getFullYear();
+    const minuts = String(date.getMinutes()).padStart(2, '0');
+    const seconds = String(date.getSeconds()).padStart(2, '0');
+    
+    const number = Number(`${year}${minuts}${seconds}`);
+    
+    console.log(number);
+
     if (points > 2) {
         return (
             <main style={{ position: 'relative' }} >
@@ -24,6 +33,7 @@ export default function Home() {
                     <div className="alert alert-success max-w-screen-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                         <span>Good job!</span>
+                        <span>Your number is {number}</span>
                     </div>                </div>
             </main>
         )
