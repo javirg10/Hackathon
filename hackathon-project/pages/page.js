@@ -16,26 +16,14 @@ export default function Home() {
     const [result4, setResult4] = useState("Human");
     const [result5, setResult5] = useState("Human");
     const [result6, setResult6] = useState("Human");
+    const [result7, setResult7] = useState("Human");
+    const [result8, setResult8] = useState("Human");
+    const [result9, setResult9] = useState("Human");
+    const [result10, setResult10] = useState("Human");
+    const [result11, setResult11] = useState("Human");
+    const [result12, setResult12] = useState("Human");
+    const [result13, setResult13] = useState("Human");
 
-    const onOptionChange1 = e => {
-        setResult1(e.target.value)
-    }
-
-    const onOptionChange2 = e => {
-        setResult2(e.target.value)
-    }
-
-    const onOptionChange3 = e => {
-        setResult3(e.target.value)
-    }
-
-    const onOptionChange4 = e => {
-        setResult4(e.target.value)
-    }
-
-    const onOptionChange5 = e => {
-        setResult5(e.target.value)
-    }
 
     function verifyResults() {
         let points = 0;
@@ -52,6 +40,21 @@ export default function Home() {
             points++;
         if (result6 === "AI")
             points++;
+        if (result7 === "Human")
+            points++;
+        if (result8 === "Human")
+            points++;
+        if (result9 === "AI")
+            points++;
+        if (result10 === "Human")
+            points++;
+        if (result11 === "AI")
+            points++;
+        if (result12 === "Human")
+            points++;
+        if (result13 === "AI")
+            points++;
+
         if (points > 2)
             console.log("Code Generated");
         console.log("points: ", points);
@@ -86,18 +89,31 @@ export default function Home() {
                 <form onSubmit={handleSubmit}>
                     <div className="flex flex-col items-center justify-center min-h-screen py-2">
 
-                        <Question imgNo="1" imgPath="/Image1.png" aiYesNo="AI" setResult={setResult1} result={result1} />
+                        <Question imgNo="1" imgPath="/ai-img-1.png" aiYesNo="AI" setResult={setResult1} result={result1} />
 
-                        <Question imgNo="2" imgPath="/Image2.jpg" aiYesNo="Human" setResult={setResult2} result={result2} />
+                        <Question imgNo="2" imgPath="/human-img-1.png" aiYesNo="Human" setResult={setResult2} result={result2} />
 
-                        <Question imgNo="3" imgPath="/Image3.jpeg" aiYesNo="Human" setResult={setResult3} result={result3} />
+                        <Question imgNo="3" imgPath="/human-img-2.png" aiYesNo="Human" setResult={setResult3} result={result3} />
 
-                        <Question imgNo="4" imgPath="/Image4.png" aiYesNo="AI" setResult={setResult4} result={result4} />
+                        <Question imgNo="4" imgPath="/ai-img-2.png" aiYesNo="AI" setResult={setResult4} result={result4} />
 
-                        <Question imgNo="5" imgPath="/Image5.png" aiYesNo="AI" setResult={setResult5} result={result5} />
+                        <Question imgNo="5" imgPath="/ai-img-3.png" aiYesNo="AI" setResult={setResult5} result={result5} />
 
-                        <Question imgNo="6" imgPath="/Image6.png" aiYesNo="AI" setResult={setResult6} result={result6} />
+                        <Question imgNo="6" imgPath="/ai-img-4.png" aiYesNo="AI" setResult={setResult6} result={result6} />
 
+                        <Question imgNo="7" imgPath="/human-img-3.png" aiYesNo="Human" setResult={setResult7} result={result7} />
+
+                        <Question imgNo="8" imgPath="/human-img-4.png" aiYesNo="Human" setResult={setResult8} result={result8} />
+
+                        <Question imgNo="9" imgPath="/ai-img-5.png" aiYesNo="AI" setResult={setResult9} result={result9} />
+
+                        <Question imgNo="10" imgPath="/human-img-5.png" aiYesNo="Human" setResult={setResult10} result={result10} />
+
+                        <Question imgNo="11" imgPath="/ai-img-6.png" aiYesNo="AI" setResult={setResult11} result={result11} />
+
+                        <Question imgNo="12" imgPath="/human-img-6.png" aiYesNo="Human" setResult={setResult12} result={result12} />
+
+                        <Question imgNo="13" imgPath="/ai-img-7.png" aiYesNo="AI" setResult={setResult13} result={result13} /> 
 
                         <button type='submit' className='btn'>Submit</button>
 

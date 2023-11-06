@@ -18,7 +18,7 @@ export default function Home() {
     
     console.log(number);
 
-    if (points > 2) {
+    if (points > 6) {
         return (
             <main style={{ position: 'relative' }} >
                 <div className="flex flex-col items-center justify-center min-h-screen py-2">
