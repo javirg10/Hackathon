@@ -6,6 +6,7 @@ import Image3 from '/Image3.jpeg';
 import Image4 from '/Image4.png';//*/
 import 'src/app/globals.css';
 import { useRouter } from 'next/navigation';
+import Question from 'components/question';
 
 export default function Home() {
 
@@ -13,6 +14,8 @@ export default function Home() {
     const [result2, setResult2] = useState("Human");
     const [result3, setResult3] = useState("Human");
     const [result4, setResult4] = useState("Human");
+    const [result5, setResult5] = useState("Human");
+    const [result6, setResult6] = useState("Human");
 
     const onOptionChange1 = e => {
         setResult1(e.target.value)
@@ -30,6 +33,10 @@ export default function Home() {
         setResult4(e.target.value)
     }
 
+    const onOptionChange5 = e => {
+        setResult5(e.target.value)
+    }
+
     function verifyResults() {
         let points = 0;
         console.log("points: ", points);
@@ -41,6 +48,10 @@ export default function Home() {
             points++;
         if (result4 === "AI")
             points++;
+        if (result5 === "AI")
+            points++;
+        if (result6 === "AI")
+            points++;
         if (points > 2)
             console.log("Code Generated");
         console.log("points: ", points);
@@ -48,14 +59,14 @@ export default function Home() {
     }
 
     const router = useRouter();
-    
+
 
     function handleSubmit(event) {
         event.preventDefault();
         console.log("submitted");
         verifyResults()
         // redirect to success page
-        
+
         router.push('/submit?points=' + verifyResults());
     }
 
@@ -75,103 +86,18 @@ export default function Home() {
                 <form onSubmit={handleSubmit}>
                     <div className="flex flex-col items-center justify-center min-h-screen py-2">
 
-                        <h2 className="text-2xl font-bold ">Image 1</h2>
-                        <Image src={'/Image1.png'} alt='Image 1' width={800} height={400} />
-                        <div>
-                            <input
-                                type="radio"
-                                aria-label="HUMAN"
-                                className="btn"
-                                id="Human-1"
-                                name="image-1"
-                                value="Human"
-                                checked={result1 === "Human"}
-                                onChange={onOptionChange1} />
-                            <input
-                                type="radio"
-                                aria-label="AI"
-                                className="btn"
-                                id="AI-1"
-                                name="image-1"
-                                value="AI"
-                                checked={result1 === "AI"}
-                                onChange={onOptionChange1} />
-                        </div>
+                        <Question imgNo="1" imgPath="/Image1.png" aiYesNo="AI" setResult={setResult1} result={result1} />
 
-                        <div className='divider'></div>
+                        <Question imgNo="2" imgPath="/Image2.jpg" aiYesNo="Human" setResult={setResult2} result={result2} />
 
-                        <h2 className="text-2xl font-bold ">Image 2</h2>
-                        <Image src={'/Image2.jpg'} alt='Image 2' width={800} height={400} />
-                        <div>
-                            <input
-                                type="radio"
-                                aria-label="HUMAN"
-                                className="btn"
-                                id="Human-2"
-                                name="image-2"
-                                value="Human"
-                                checked={result2 === "Human"}
-                                onChange={onOptionChange2} />
-                            <input
-                                type="radio"
-                                aria-label="AI"
-                                className="btn"
-                                id="AI-2"
-                                name="image-2"
-                                value="AI"
-                                checked={result2 === "AI"}
-                                onChange={onOptionChange2} />
-                        </div>
+                        <Question imgNo="3" imgPath="/Image3.jpeg" aiYesNo="Human" setResult={setResult3} result={result3} />
 
-                        <div className='divider'></div>
+                        <Question imgNo="4" imgPath="/Image4.png" aiYesNo="AI" setResult={setResult4} result={result4} />
 
-                        <h2 className="text-2xl font-bold ">Image 3</h2>
-                        <Image src={'/Image3.jpeg'} alt='Image 3' width={800} height={400} />
-                        <div>
-                            <input
-                                type="radio"
-                                aria-label="HUMAN"
-                                className="btn"
-                                id="Human-3"
-                                name="image-3"
-                                value="Human"
-                                checked={result3 === "Human"}
-                                onChange={onOptionChange3} />
-                            <input
-                                type="radio"
-                                aria-label="AI"
-                                className="btn"
-                                id="AI-3"
-                                name="image-3"
-                                value="AI"
-                                checked={result3 === "AI"}
-                                onChange={onOptionChange3} />
-                        </div>
+                        <Question imgNo="5" imgPath="/Image5.png" aiYesNo="AI" setResult={setResult5} result={result5} />
 
-                        <div className='divider'></div>
+                        <Question imgNo="6" imgPath="/Image6.png" aiYesNo="AI" setResult={setResult6} result={result6} />
 
-                        <h2 className="text-2xl font-bold ">Image 4</h2>
-                        <Image src={'/Image4.png'} alt='Image 4' width={800} height={400} />
-                        <div>
-                            <input
-                                type="radio"
-                                aria-label="HUMAN"
-                                className="btn"
-                                id="Human-4"
-                                name="image-4"
-                                value="Human"
-                                checked={result4 === "Human"}
-                                onChange={onOptionChange4} />
-                            <input
-                                type="radio"
-                                aria-label="AI"
-                                className="btn"
-                                id="AI-4"
-                                name="image-4"
-                                value="AI"
-                                checked={result4 === "AI"}
-                                onChange={onOptionChange4} />
-                        </div>
 
                         <button type='submit' className='btn'>Submit</button>
 
