@@ -79,13 +79,15 @@ export default function Home() {
 
             <div className="flex flex-col items-center justify-center min-h-screen py-2">
                 <img
-                    src="\Logo_FHJ_rgb.jpg"
+                    src="\Logo_FHJ_rgb-removebg.png"
                     alt="Mi Imagen"
                     height={100}
                     width={300}
+                    style={{ display: 'inline-block' }}
 
                 />
                 <h1 className="text-4xl font-bold">Quiz: AI vs Human Generated Content</h1>
+                <br />
                 <form onSubmit={handleSubmit}>
                     <div className="flex flex-col items-center justify-center min-h-screen py-2">
 
