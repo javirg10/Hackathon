@@ -5,7 +5,7 @@
  - Javi
  - Astrid
 ## Topic
-Quiz to see if people can discern between AI-Generated Content and Human Content.µ
+Quiz to see if people can discern between AI-Generated Content and Human Content.
 
 ## Getting it running
 You have to navigate into the hackathon-project folder. Here you can start the application with: ```npm run dev``` Once the application is up and running, as of right now, you have to navigate to ```http://localhost:3000/page``` to start the quiz.
