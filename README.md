@@ -18,6 +18,9 @@ Each image has a radio button with 2 values, Human and AI, for each image you ha
  - [x] Git Repository
  - [x] Functional Quiz
  - [x] Number for passing the Quiz
+ - [ ] Secure Number Generation
+   - [ ] POST request
  - [ ] Generate Random Quiz
+   - [ ] Only 4-5 images
    - [ ] Show Solution
  - [ ] Security
