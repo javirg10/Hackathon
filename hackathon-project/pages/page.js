@@ -67,7 +67,7 @@ export default function Home() {
     function handleSubmit(event) {
         event.preventDefault();
         console.log("submitted");
-        localStorage.setItem("points", verifyResults())
+        sessionStorage.setItem("points", verifyResults())
         // redirect to success page
         router.push('/submit');
     }
