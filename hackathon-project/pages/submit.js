@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
-import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
 import 'src/app/globals.css';
-import { useSearchParams } from 'next/navigation'
 
 export default function Home() {
-    const success = false;
-
-    const searchParams = useSearchParams()
-    const points = searchParams.get('points')
+    const [points, setPoints] = useState()
+    const [generated, setGenerated] = useState("false")
+    
+    useEffect(() => {
+        setPoints(parseInt(localStorage.getItem("points")) || 0);
+        if(points !==0) {
+            setGenerated("true")
+            localStorage.setItem("generated", generated)
+        }
+        
+    })
 
     const date = new Date();
     const year = date.getFullYear();
@@ -16,8 +21,6 @@ export default function Home() {
     
     const number = Number(`${year}${minuts}${seconds}`);
     
-    console.log(number);
-
     if (points > 6) {
         return (
             <main style={{ position: 'relative'}}>

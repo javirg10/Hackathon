@@ -55,7 +55,7 @@ export default function Home() {
         if (result13 === "AI")
             points++;
 
-        if (points > 2)
+        if (points > 6)
             console.log("Code Generated");
         console.log("points: ", points);
         return points;
@@ -67,10 +67,9 @@ export default function Home() {
     function handleSubmit(event) {
         event.preventDefault();
         console.log("submitted");
-        verifyResults()
+        localStorage.setItem("points", verifyResults())
         // redirect to success page
-
-        router.push('/submit?points=' + verifyResults());
+        router.push('/submit');
     }
 
     return (
