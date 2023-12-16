@@ -1,0 +1,69 @@
+{
+    "questions":[
+        {
+            "imgNo": 1,
+            "imgPath": "/ai-img-1.png",
+            "aiBoolean":"AI"
+        },
+        {
+            "imgNo": 2,
+            "imgPath": "/ai-img-2.png",
+            "aiBoolean":"AI"
+        },
+        {
+            "imgNo": 3,
+            "imgPath": "/ai-img-3.png",
+            "aiBoolean":"AI"
+        },
+        {
+            "imgNo": 4,
+            "imgPath": "/ai-img-4.png",
+            "aiBoolean":"AI"
+        },
+        {
+            "imgNo": 5,
+            "imgPath": "/ai-img-5.png",
+            "aiBoolean":"AI"
+        },
+        {
+            "imgNo": 6,
+            "imgPath": "/ai-img-6.png",
+            "aiBoolean":"AI"
+        },
+        {
+            "imgNo": 7,
+            "imgPath": "/ai-img-7.png",
+            "aiBoolean":"AI"
+        },
+        {
+            "imgNo": 8,
+            "imgPath": "/human-img-1.png",
+            "aiBoolean":"Human"
+        },
+        {
+            "imgNo": 9,
+            "imgPath": "/human-img-2.png",
+            "aiBoolean":"Human"
+        },
+        {
+            "imgNo": 10,
+            "imgPath": "/human-img-3.png",
+            "aiBoolean":"Human"
+        },
+        {
+            "imgNo": 11,
+            "imgPath": "/human-img-4.png",
+            "aiBoolean":"Human"
+        },
+        {
+            "imgNo": 12,
+            "imgPath": "/human-img-5.png",
+            "aiBoolean":"Human"
+        },
+        {
+            "imgNo": 13,
+            "imgPath": "/human-img-6.png",
+            "aiBoolean":"Human"
+        }
+    ]
+}

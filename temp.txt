@@ -1,0 +1,15 @@
+<Question imgNo="6" imgPath="/ai-img-4.png" aiYesNo="AI" setResult={setResult6} result={result6} />
+
+<Question imgNo="7" imgPath="/human-img-3.png" aiYesNo="Human" setResult={setResult7} result={result7} />
+
+<Question imgNo="8" imgPath="/human-img-4.png" aiYesNo="Human" setResult={setResult8} result={result8} />
+
+<Question imgNo="9" imgPath="/ai-img-5.png" aiYesNo="AI" setResult={setResult9} result={result9} />
+
+<Question imgNo="10" imgPath="/human-img-5.png" aiYesNo="Human" setResult={setResult10} result={result10} />
+
+<Question imgNo="11" imgPath="/ai-img-6.png" aiYesNo="AI" setResult={setResult11} result={result11} />
+
+<Question imgNo="12" imgPath="/human-img-6.png" aiYesNo="Human" setResult={setResult12} result={result12} />
+
+<Question imgNo="13" imgPath="/ai-img-7.png" aiYesNo="AI" setResult={setResult13} result={result13} /> 

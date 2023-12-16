@@ -10,7 +10,7 @@ export default function Home() {
     })
 
     
-    if (points > 6) {
+    if (points > 2) {
         if(sessionStorage.getItem("number")!=null){
             const stored= parseInt(sessionStorage.getItem("number"))
             return(
