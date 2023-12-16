@@ -24,8 +24,8 @@ Each image has a radio button with 2 values, Human and AI, for each image you ha
  - [ ] Secure Number Generation
    - [x] Points in LocalStorage
    - [ ] POST request
- - [ ] Generate Random Quiz
-   - [ ] Only 4-5 images
+ - [x] Generate Random Quiz
+   - [x] Only 4-5 images
    - [ ] Show Solution
-   - [ ] Possible JSON file with the Data
+   - [x] Possible JSON file with the Data
  - [ ] Security
