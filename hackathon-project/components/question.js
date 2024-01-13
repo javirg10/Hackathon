@@ -16,9 +16,12 @@ export default function Question(props) {
 
     return (
         <>
-        <h2 className="text-2xl font-bold ">Question {imgNo}</h2>
+        <div className='mb-6'>
+        <h2 className="mb-4 text-4xl">Question {imgNo}</h2>
+        <div className='mb-6'>
         <Image src={imgPath} alt={'image ' + imgNo} width={800} height={400} />
-        <div>
+        </div>
+        <div className='mb-6'>
             <input
                 type="radio"
                 aria-label="HUMAN"
@@ -38,8 +41,8 @@ export default function Question(props) {
                 checked={result === "AI"}
                 onChange={onOptionChange} />
         </div>
+        </div>
 
-        <div className='divider'></div>
         </>
     )
 }
