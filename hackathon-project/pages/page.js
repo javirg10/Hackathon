@@ -142,8 +142,12 @@ export default function Home() {
             {/* Contenido del quiz */}
         </div>
         <div className="additional-info" style={{ backgroundColor: '#e0e0e0', padding: '20px', textAlign: 'center', marginTop: '1px' }}>
-            <p>Contacto: <a href="mailto:correo@example.com">correo@example.com</a></p>
-            <p>Más información: <a href="https://www.ejemplo.com">www.ejemplo.com</a></p>
+            <p>Contact: </p>
+            <p><a href="mailto:jan.willem@edu.fh-joanneum.at">jan.willem@edu.fh-joanneum.at</a></p>
+            <p><a href="mailto:astrid@edu.fh-joanneum.at">astrid@edu.fh-joanneum.at</a></p>
+            <p><a href="mailto:francisco.redondogarcia@edu.fh-joanneum.at">francisco.redondogarcia@edu.fh-joanneum.at</a></p>
+            <p><a>***</a></p>
+            <p>More information: <a href="https://www.fh-joanneum.at/">www.fh-joanneum.at</a></p>
         </div>
         </main>
     )
