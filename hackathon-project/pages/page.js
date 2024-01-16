@@ -126,7 +126,7 @@ export default function Home() {
 
                         <Question imgNo="5" imgPath={resutls[4].imgPath} aiYesNo={resutls[4].aiBoolean} setResult={setResult5} result={result5} />
 
-                        <button type='submit' className='btn'>Submit</button>
+                        <button type='submit' className='btn' style={{ fontSize: '1.5em',  backgroundColor: '#aaffaa',border: '2px solid #008800' }}>CHECK</button>
 
                     </div>
                 </form>
